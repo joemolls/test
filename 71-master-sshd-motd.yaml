@@ -3,7 +3,7 @@ kind: MachineConfig
 metadata:
   labels:
     machineconfiguration.openshift.io/role: master
-  name: 51-custom
+  name: 71-master-sshd-motd
 spec:
   config:
     ignition:
@@ -15,3 +15,4 @@ spec:
         filesystem: root
         mode: 0644
         path: /etc/customtest
+        overwrite: true
