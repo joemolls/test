@@ -13,6 +13,6 @@ spec:
       - contents:
           source: data:,custom
         filesystem: root
-        mode: 0644
-        path: /etc/customtest
+        mode: 0444
+        path: /etc/motd
         overwrite: true
